@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="ToPAS Lx — NOVA FCT">
+<defs><radialGradient id="glow"><stop stop-color="#7ecfc8" stop-opacity=".25"/><stop offset="1" stop-color="#111116"/></radialGradient></defs>
+<rect width="800" height="450" fill="#111116"/><circle cx="700" cy="100" r="330" fill="url(#glow)"/><rect x="24" y="24" width="752" height="402" rx="24" fill="none" stroke="#7ecfc8" stroke-opacity=".28"/>
+<g fill="none" stroke="#7ecfc8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="m676 82-45 45 45 45m50-90 45 45-45 45m-17-103-17 116"/></g>
+<path d="M52 274h100" stroke="#7ecfc8" stroke-width="5"/><text x="52" y="338" fill="#fafafa" font-family="Arial,sans-serif" font-size="58" font-weight="700">ToPAS Lx</text><text x="54" y="385" fill="#7ecfc8" font-family="Arial,sans-serif" font-size="25">NOVA FCT</text>
+</svg>

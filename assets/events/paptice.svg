@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="PAPTICe — PAP Inspire · ANPRI">
+<defs><radialGradient id="glow"><stop stop-color="#a6a4ff" stop-opacity=".25"/><stop offset="1" stop-color="#111116"/></radialGradient></defs>
+<rect width="800" height="450" fill="#111116"/><circle cx="700" cy="100" r="330" fill="url(#glow)"/><rect x="24" y="24" width="752" height="402" rx="24" fill="none" stroke="#a6a4ff" stroke-opacity=".28"/>
+<g fill="none" stroke="#a6a4ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><rect x="649" y="76" width="102" height="102" rx="14"/><rect x="678" y="105" width="44" height="44" rx="6"/><path d="M667 58v18m33-18v18m33-18v18m-66 102v18m33-18v18m33-18v18M631 94h18m-18 34h18m-18 32h18m102-66h18m-18 34h18m-18 32h18"/></g>
+<path d="M52 274h100" stroke="#a6a4ff" stroke-width="5"/><text x="52" y="338" fill="#fafafa" font-family="Arial,sans-serif" font-size="58" font-weight="700">PAPTICe</text><text x="54" y="385" fill="#a6a4ff" font-family="Arial,sans-serif" font-size="25">PAP Inspire · ANPRI</text>
+</svg>

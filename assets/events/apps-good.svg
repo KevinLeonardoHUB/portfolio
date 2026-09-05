@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="Apps for Good — Electronics for All">
+<defs><radialGradient id="glow"><stop stop-color="#f6b92b" stop-opacity=".25"/><stop offset="1" stop-color="#111116"/></radialGradient></defs>
+<rect width="800" height="450" fill="#111116"/><circle cx="700" cy="100" r="330" fill="url(#glow)"/><rect x="24" y="24" width="752" height="402" rx="24" fill="none" stroke="#f6b92b" stroke-opacity=".28"/>
+<g fill="none" stroke="#f6b92b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M655 75h90v42c0 55-90 55-90 0z M655 87h-26v20c0 28 26 28 26 28 M745 87h26v20c0 28-26 28-26 28 M700 159v38 M670 198h60"/></g>
+<path d="M52 274h100" stroke="#f6b92b" stroke-width="5"/><text x="52" y="338" fill="#fafafa" font-family="Arial,sans-serif" font-size="58" font-weight="700">Apps for Good</text><text x="54" y="385" fill="#f6b92b" font-family="Arial,sans-serif" font-size="25">Electronics for All</text>
+</svg>

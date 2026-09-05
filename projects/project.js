@@ -321,3 +321,24 @@ setText(
     ? "© 2026 A project by Quévin Tavares"
     : "© 2026 Projeto de Quévin Tavares",
 );
+
+// A short list of the other projects, keeping the selected language.
+var related = document.createElement("nav");
+related.className = "container related-projects";
+related.setAttribute("aria-label", english ? "Other projects" : "Outros projetos");
+var heading = document.createElement("h2");
+heading.textContent = english ? "Explore other projects" : "Explorar outros projetos";
+related.appendChild(heading);
+var list = document.createElement("ul");
+var pages = { portfolio: "portfolio", xpc: "xpc", armiac: "armiac", clinica: "clinica", gestao: "gestao-alunos" };
+for (var projectId in pages) {
+  if (projectId === document.body.getAttribute("data-project")) continue;
+  var item = document.createElement("li");
+  var link = document.createElement("a");
+  link.href = pages[projectId] + ".html" + (english ? "?lang=en" : "");
+  link.textContent = projects[projectId].title[lang];
+  item.appendChild(link);
+  list.appendChild(item);
+}
+related.appendChild(list);
+document.querySelector("main").appendChild(related);

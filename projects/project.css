@@ -55,7 +55,7 @@ header {
 }
 .project-hero {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
   gap: 48px;
   align-items: center;
   padding: 72px 0 44px;
@@ -82,7 +82,7 @@ h1 {
 .hero-image {
   width: 100%;
   aspect-ratio: 4/3;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 30px;
   border: 1px solid var(--line);
 }
@@ -115,7 +115,7 @@ body[data-project="armiac"] .hero-image {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 14px;
-  margin: 20px 0 50px;
+  margin: 20px auto 50px;
 }
 .fact,
 .panel {
@@ -135,11 +135,13 @@ body[data-project="armiac"] .hero-image {
 }
 .content-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
   padding-bottom: 70px;
 }
 .panel {
+  min-width: 0;
+  overflow-wrap: anywhere;
   padding: 28px;
 }
 .panel.wide {
@@ -205,3 +207,9 @@ footer {
     padding-top: 44px;
   }
 }
+
+.related-projects { margin: 0 auto 50px; padding: 24px; border: 1px solid var(--line); border-radius: 24px; background: var(--card); }
+.related-projects h2 { margin-bottom: 14px; font-size: 1.2rem; }
+.related-projects ul { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
+.related-projects a { display: block; padding: 10px 16px; border: 1px solid var(--line); border-radius: 14px; }
+.related-projects a:hover, .related-projects a:focus-visible { color: var(--yellow); border-color: var(--yellow); }
