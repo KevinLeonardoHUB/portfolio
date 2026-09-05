@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 :root {
@@ -98,14 +97,6 @@ header {
   color: #111;
   font-weight: 800;
   border: none;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(246, 185, 43, 0.25);
 }
 
 .btn-outline {
@@ -269,18 +260,6 @@ section {
   text-align: center;
   padding: 18px;
   font-weight: 800;
-  transition:
-    transform 0.2s ease,
-    border-color 0.2s ease,
-    background 0.2s ease;
-}
-
-.stack-item:hover,
-.project-card:hover,
-.experience-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(246, 185, 43, 0.45);
-  background: rgba(255, 255, 255, 0.07);
 }
 
 .projects-grid {
@@ -291,10 +270,12 @@ section {
 
 .project-card {
   overflow: hidden;
-  transition:
-    transform 0.2s ease,
-    border-color 0.2s ease,
-    background 0.2s ease;
+  cursor: pointer;
+}
+
+.project-card:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 4px;
 }
 
 .project-cover {
@@ -445,13 +426,6 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
-}
-
-.experience-card {
-  transition:
-    transform 0.2s ease,
-    border-color 0.2s ease,
-    background 0.2s ease;
 }
 
 .experience-card small {
