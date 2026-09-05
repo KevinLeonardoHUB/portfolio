@@ -360,6 +360,13 @@ section {
   font-weight: 900;
 }
 
+.project-content .project-details-link {
+  padding: 10px 16px;
+  border-radius: 999px;
+  color: #111;
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+}
+
 .project-card-featured {
   border-color: rgba(246, 185, 43, 0.34);
   box-shadow: 0 22px 60px rgba(246, 185, 43, 0.08);
@@ -385,8 +392,8 @@ section {
   height: 100%;
   max-width: none;
   max-height: none;
-  object-fit: cover;
-  object-position: center 38%;
+  object-fit: contain;
+  object-position: center;
   opacity: 0.95;
   filter: none;
 }
@@ -471,6 +478,91 @@ footer {
   border-top: 1px solid var(--line);
   color: var(--muted);
   text-align: center;
+}
+
+.admissions-hero {
+  min-height: 72vh;
+  display: grid;
+  align-content: center;
+  max-width: 900px;
+}
+
+.admissions-hero h1 {
+  margin-top: 14px;
+}
+
+.admissions-hero p {
+  margin-top: 24px;
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 1.15rem;
+}
+
+.admissions-grid,
+.story-grid,
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.admissions-card,
+.story-card,
+.media-card {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.045);
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.admissions-card,
+.story-card {
+  padding: 28px;
+}
+
+.admissions-card h2,
+.story-card h3 {
+  margin-bottom: 12px;
+}
+
+.admissions-card p,
+.story-card p,
+.media-card p {
+  color: var(--muted);
+}
+
+.admissions-card ul {
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.media-card img,
+.media-card iframe {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border: 0;
+}
+
+.media-card div {
+  padding: 20px;
+}
+
+.media-card img[src="assets/armiac-cover.png"] {
+  object-fit: contain;
+  background: #000;
+}
+
+.media-card h3 {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 760px) {
+  .admissions-grid,
+  .story-grid,
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (min-width: 901px) {

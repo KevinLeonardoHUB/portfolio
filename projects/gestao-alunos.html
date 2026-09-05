@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="project.css" />
+    <script src="project.js" defer></script>
+    <script src="../script.js" defer></script>
+  </head>
+  <body data-project="gestao">
+    <header>
+      <nav class="container detail-nav">
+        <a class="back-link"></a><a class="language-link"></a>
+      </nav>
+    </header>
+    <main>
+      <section class="container project-hero">
+        <div>
+          <small class="eyebrow"></small>
+          <h1></h1>
+          <p class="lead"></p>
+          <div class="actions">
+            <a
+              class="button"
+              data-link="repo"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a
+            ><a
+              class="button secondary"
+              data-link="live"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a>
+          </div>
+        </div>
+        <img class="hero-image" />
+      </section>
+      <section class="container facts">
+        <div class="fact">
+          <small data-label="status"></small
+          ><strong data-fact="status"></strong>
+        </div>
+        <div class="fact">
+          <small data-label="year"></small><strong data-fact="year"></strong>
+        </div>
+        <div class="fact">
+          <small data-label="version"></small
+          ><strong data-fact="version"></strong>
+        </div>
+      </section>
+      <section class="container content-grid">
+        <article class="panel">
+          <h2 data-title="about"></h2>
+          <p data-copy="about"></p>
+        </article>
+        <article class="panel">
+          <h2 data-title="features"></h2>
+          <ul data-list="features"></ul>
+        </article>
+        <article class="panel">
+          <h2 data-title="tech"></h2>
+          <div class="tech-list" data-list="tech"></div>
+        </article>
+        <article class="panel">
+          <h2 data-title="challenge"></h2>
+          <p data-copy="challenge"></p>
+        </article>
+        <article class="panel wide">
+          <h2 data-title="flow"></h2>
+          <div class="flow" data-list="flow"></div>
+        </article>
+      </section>
+    </main>
+    <footer><p></p></footer>
+  </body>
+</html>
