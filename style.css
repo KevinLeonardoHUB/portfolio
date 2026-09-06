@@ -641,6 +641,10 @@ footer {
 .academic-summary { grid-column: 1 / -1; padding: 22px; border-left: 3px solid var(--yellow); background: var(--card); border-radius: 0 18px 18px 0; }
 .academic-summary strong { color: var(--yellow); }
 .admissions-focus { grid-column: 1 / -1; }
+.admissions-intro { max-width: 800px; margin-bottom: 28px; color: var(--muted); }
+.admissions-opportunities .story-card > small { display: block; margin-bottom: 12px; color: var(--yellow); font-weight: 700; }
+.admissions-opportunities .application-note { color: var(--muted); margin-top: 24px; }
+.admissions-grid > *, .admissions-opportunities .story-grid > * { min-width: 0; overflow-wrap: anywhere; }
 .application-note { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); font-size: .95rem; }
 @media (max-width: 1050px) { .nav { flex-wrap: wrap; padding-block: 14px; } .nav-links { gap: 16px; flex-wrap: wrap; } }
 @media (max-width: 640px) { .nav-links { display: flex; width: 100%; justify-content: center; order: 3; font-size: .85rem; } .nav > .btn { width: auto; } }
