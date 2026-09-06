@@ -78,6 +78,13 @@ function makeClickable(card) {
   var link =
     card.querySelector(".project-details-link") ||
     card.querySelector("a[href]");
+  var cardUrl = card.getAttribute("data-project-link");
+  if (!link && cardUrl) {
+    link = document.createElement("a");
+    link.href = cardUrl;
+    link.className = "visually-hidden-card-link";
+    card.appendChild(link);
+  }
   if (!link) return;
   card.tabIndex = 0;
   card.setAttribute("role", "link");

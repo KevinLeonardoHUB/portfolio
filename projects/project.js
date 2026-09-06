@@ -322,23 +322,34 @@ setText(
     : "© 2026 Projeto de Quévin Tavares",
 );
 
-// A short list of the other projects, keeping the selected language.
+// Show the other projects as image cards, matching the home page.
 var related = document.createElement("nav");
 related.className = "container related-projects";
 related.setAttribute("aria-label", english ? "Other projects" : "Outros projetos");
 var heading = document.createElement("h2");
 heading.textContent = english ? "Explore other projects" : "Explorar outros projetos";
 related.appendChild(heading);
-var list = document.createElement("ul");
+var grid = document.createElement("div");
+grid.className = "related-projects-grid";
 var pages = { portfolio: "portfolio", xpc: "xpc", armiac: "armiac", clinica: "clinica", gestao: "gestao-alunos" };
 for (var projectId in pages) {
   if (projectId === document.body.getAttribute("data-project")) continue;
-  var item = document.createElement("li");
-  var link = document.createElement("a");
-  link.href = pages[projectId] + ".html" + (english ? "?lang=en" : "");
-  link.textContent = projects[projectId].title[lang];
-  item.appendChild(link);
-  list.appendChild(item);
+  var item = document.createElement("a");
+  item.className = "related-project-card";
+  item.href = pages[projectId] + ".html" + (english ? "?lang=en" : "");
+  var image = document.createElement("img");
+  image.src = projects[projectId].image;
+  image.alt = projects[projectId].title[lang];
+  var content = document.createElement("div");
+  var title = document.createElement("strong");
+  title.textContent = projects[projectId].title[lang];
+  var summary = document.createElement("small");
+  summary.textContent = projects[projectId].summary[lang];
+  content.appendChild(title);
+  content.appendChild(summary);
+  item.appendChild(image);
+  item.appendChild(content);
+  grid.appendChild(item);
 }
-related.appendChild(list);
+related.appendChild(grid);
 document.querySelector("main").appendChild(related);

@@ -278,6 +278,8 @@ section {
   outline-offset: 4px;
 }
 
+.visually-hidden-card-link { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
 .project-cover {
   position: relative;
   height: 150px;
@@ -638,5 +640,7 @@ footer {
 .music-pending { padding: 32px; border: 1px dashed var(--line); border-radius: 24px; color: var(--muted); }
 .academic-summary { grid-column: 1 / -1; padding: 22px; border-left: 3px solid var(--yellow); background: var(--card); border-radius: 0 18px 18px 0; }
 .academic-summary strong { color: var(--yellow); }
+.admissions-focus { grid-column: 1 / -1; }
+.application-note { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); font-size: .95rem; }
 @media (max-width: 1050px) { .nav { flex-wrap: wrap; padding-block: 14px; } .nav-links { gap: 16px; flex-wrap: wrap; } }
 @media (max-width: 640px) { .nav-links { display: flex; width: 100%; justify-content: center; order: 3; font-size: .85rem; } .nav > .btn { width: auto; } }
