@@ -1,77 +1,100 @@
 <!doctype html>
-<html>
+<html lang="pt-PT">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gestão de Alunos | Quévin Tavares</title>
     <link rel="stylesheet" href="project.css" />
-    <script src="project.js" defer></script>
     <script src="../script.js" defer></script>
   </head>
-  <body data-project="gestao">
+  <body>
     <header>
       <nav class="container detail-nav">
-        <a class="back-link"></a><a class="language-link"></a>
+        <a class="back-link" href="../index.html#projetos">← Voltar ao portfólio</a>
+        <a class="language-link" href="gestao-alunos-en.html">EN</a>
       </nav>
     </header>
     <main>
       <section class="container project-hero">
         <div>
-          <small class="eyebrow"></small>
-          <h1></h1>
-          <p class="lead"></p>
+          <small class="eyebrow">C · Aplicação de terminal</small>
+          <h1>Gestão de Alunos</h1>
+          <p class="lead">Primeiro projeto: uma aplicação de terminal para professores gerirem alunos, disciplinas e notas. Programado em C.</p>
           <div class="actions">
-            <a
-              class="button"
-              data-link="repo"
-              target="_blank"
-              rel="noopener noreferrer"
-            ></a
-            ><a
-              class="button secondary"
-              data-link="live"
-              target="_blank"
-              rel="noopener noreferrer"
-            ></a>
+            <a class="button" href="https://github.com/KevinLeonardoHUB/gestao_alunos" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
           </div>
         </div>
-        <img class="hero-image" />
+        <img class="hero-image" src="../assets/C.png" alt="Gestão de Alunos" />
       </section>
       <section class="container facts">
-        <div class="fact">
-          <small data-label="status"></small
-          ><strong data-fact="status"></strong>
-        </div>
-        <div class="fact">
-          <small data-label="year"></small><strong data-fact="year"></strong>
-        </div>
-        <div class="fact">
-          <small data-label="version"></small
-          ><strong data-fact="version"></strong>
-        </div>
+        <div class="fact"><small>Estado</small><strong>Projeto concluído</strong></div>
+        <div class="fact"><small>Ano</small><strong>2023</strong></div>
+        <div class="fact"><small>Versão</small><strong>C / GCC</strong></div>
       </section>
       <section class="container content-grid">
         <article class="panel">
-          <h2 data-title="about"></h2>
-          <p data-copy="about"></p>
+          <h2>Sobre o projeto</h2>
+          <p>O programa utiliza estruturas, arrays, funções e manipulação de ficheiros. Separa declarações e implementação entre funcoes.h, funcoes.c e main.c.</p>
         </article>
         <article class="panel">
-          <h2 data-title="features"></h2>
-          <ul data-list="features"></ul>
+          <h2>Funcionalidades</h2>
+          <ul>
+            <li>Registo e login de professores</li>
+            <li>Associação do professor a uma disciplina</li>
+            <li>Adição de alunos à turma</li>
+            <li>Registo e alteração de notas</li>
+            <li>Cálculo de médias e persistência local</li>
+          </ul>
         </article>
         <article class="panel">
-          <h2 data-title="tech"></h2>
-          <div class="tech-list" data-list="tech"></div>
+          <h2>Tecnologias</h2>
+          <div class="tech-list">
+            <span>C</span>
+            <span>GCC</span>
+            <span>Structs</span>
+            <span>Arrays</span>
+            <span>File I/O</span>
+          </div>
         </article>
         <article class="panel">
-          <h2 data-title="challenge"></h2>
-          <p data-copy="challenge"></p>
-        </article>
-        <article class="panel wide">
-          <h2 data-title="flow"></h2>
-          <div class="flow" data-list="flow"></div>
+          <h2>Desafios e aprendizagem</h2>
+          <p>Modelar dados de professores e alunos em C e persistir o estado num ficheiro local, aplicando pela primeira vez uma organização modular do código.</p>
         </article>
       </section>
+      <nav class="container related-projects" aria-label="Outros projetos">
+        <h2>Explorar outros projetos</h2>
+        <div class="related-projects-grid">
+          <a class="related-project-card" href="portfolio.html">
+            <img src="../assets/Portfolio.png" alt="Portfólio Pessoal" />
+            <div>
+              <strong>Portfólio Pessoal</strong>
+              <small>Um portfólio responsivo e bilingue para apresentar competências, experiência, projetos e contactos numa interface pessoal.</small>
+            </div>
+          </a>
+          <a class="related-project-card" href="xpc.html">
+            <img src="../assets/Loja XPC.png" alt="XPC Loja Online" />
+            <div>
+              <strong>XPC Loja Online</strong>
+              <small>Loja online em PHP com autenticação, carrinho, checkout, gestão de stock, área de cliente e painel administrativo.</small>
+            </div>
+          </a>
+          <a class="related-project-card" href="armiac.html">
+            <img src="../assets/armiac-cover.png" alt="ARMIAC — Mão Robótica Inteligente" />
+            <div>
+              <strong>ARMIAC — Mão Robótica Inteligente</strong>
+              <small>Protótipo funcional de mão robótica articulada, impressa em 3D e controlada por uma app Flutter através de Wi‑Fi, HTTP e comandos de voz.</small>
+            </div>
+          </a>
+          <a class="related-project-card" href="clinica.html">
+            <img src="../assets/clinica_escolar.png" alt="Clínica Escolar" />
+            <div>
+              <strong>Clínica Escolar</strong>
+              <small>Sistema web para alunos criarem conta, confirmarem o email e gerirem marcações numa clínica escolar.</small>
+            </div>
+          </a>
+        </div>
+      </nav>
     </main>
-    <footer><p></p></footer>
+    <footer><p>© 2026 Projeto de Quévin Tavares</p></footer>
   </body>
 </html>

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ARMIAC — Intelligent Robotic Hand | Quévin Tavares</title>
+    <link rel="stylesheet" href="project.css" />
+    <script src="../script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="container detail-nav">
+        <a class="back-link" href="../en.html#projects">← Back to portfolio</a>
+        <a class="language-link" href="armiac.html">PT</a>
+      </nav>
+    </header>
+    <main>
+      <section class="container project-hero">
+        <div>
+          <small class="eyebrow">Final Project 2025/2026 · Robotics</small>
+          <h1>ARMIAC — Intelligent Robotic Hand</h1>
+          <p class="lead">A functional articulated robotic-hand prototype, 3D printed and controlled by a Flutter app through Wi-Fi, HTTP and voice commands.</p>
+          <div class="actions">
+            <a class="button" href="https://github.com/KevinLeonardoHUB/armiac-pap" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <a class="button secondary" href="https://www.youtube.com/watch?v=DZ1Mz6-E2Yc&amp;t=1s" target="_blank" rel="noopener noreferrer">Watch demonstration</a>
+          </div>
+        </div>
+        <img class="hero-image" src="../assets/armiac-cover.png" alt="ARMIAC — Intelligent Robotic Hand" />
+      </section>
+      <section class="container facts">
+        <div class="fact"><small>Status</small><strong>PAP completed</strong></div>
+        <div class="fact"><small>Year</small><strong>2025/2026</strong></div>
+        <div class="fact"><small>Version</small><strong>App 1.1.7</strong></div>
+      </section>
+      <section class="container content-grid">
+        <article class="panel">
+          <h2>About the project</h2>
+          <p>ARMIAC integrates mobile development, embedded systems, electronics, networking and 3D manufacturing. The Android app sends HTTP requests to the ESP32, which communicates over I2C with the PCA9685 and turns commands into PWM signals for the servomotors.</p>
+        </article>
+        <article class="panel">
+          <h2>Features</h2>
+          <ul>
+            <li>Individual finger and forearm control</li>
+            <li>Open/close hand and predefined gestures</li>
+            <li>Portuguese voice commands</li>
+            <li>Bilingual interface, tutorial and connection status</li>
+            <li>Articulated PLA-printed structure</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h2>Technologies</h2>
+          <div class="tech-list">
+            <span>Flutter</span>
+            <span>Dart</span>
+            <span>C++/Arduino</span>
+            <span>ESP32</span>
+            <span>PCA9685</span>
+            <span>Wi‑Fi/HTTP</span>
+            <span>I2C/PWM</span>
+            <span>3D Printing</span>
+          </div>
+        </article>
+        <article class="panel">
+          <h2>Challenges and learning</h2>
+          <p>The work required learning Flutter and Dart, calibrating servos, stabilising power, adjusting tendons and mechanical parts, and integrating software with real hardware.</p>
+        </article>
+        <article class="panel wide">
+          <h2>Future vision</h2>
+          <p>I want to continue developing ARMIAC as resources and funding become available. Alongside its educational purpose, I intend to explore applications related to accessibility and communication in learning environments.</p>
+          <ul>
+            <li><strong>A second robotic hand and arm:</strong> build and synchronise two arms to reproduce a wider range of gestures.</li>
+            <li><strong>Speech and sign language:</strong> research an experimental system that receives spoken input, for example during a lesson, and reproduces corresponding signs. This goal requires research into speech processing, sign-language interpretation and mechanical articulation; it is not yet implemented.</li>
+            <li><strong>Precision and durability:</strong> add finger pressure sensors, improve servo calibration, make movements smoother, and reinforce the structure and internal cable management.</li>
+            <li><strong>Controls and application:</strong> create custom movement profiles, automated programmed movements and command history, as well as explore iOS support.</li>
+            <li><strong>Communication and portability:</strong> explore Bluetooth connectivity and a battery solution better suited to transporting the prototype.</li>
+          </ul>
+          </article>
+      </section>
+      <nav class="container related-projects" aria-label="Other projects">
+        <h2>Explore other projects</h2>
+        <div class="related-projects-grid">
+          <a class="related-project-card" href="portfolio-en.html">
+            <img src="../assets/Portfolio.png" alt="Personal Portfolio" />
+            <div>
+              <strong>Personal Portfolio</strong>
+              <small>A responsive bilingual portfolio presenting skills, experience, projects and contact details through a personal interface.</small>
+            </div>
+          </a>
+          <a class="related-project-card" href="xpc-en.html">
+            <img src="../assets/Loja XPC.png" alt="XPC Online Shop" />
+            <div>
+              <strong>XPC Online Shop</strong>
+              <small>A PHP online shop with authentication, cart, checkout, stock management, customer area and administration panel.</small>
+            </div>
+          </a>
+          <a class="related-project-card" href="clinica-en.html">
+            <img src="../assets/clinica_escolar.png" alt="School Clinic" />
+            <div>
+              <strong>School Clinic</strong>
+              <small>A web system where students create accounts, verify email and manage appointments at a school clinic.</small>
+            </div>
+          </a>
+          <a class="related-project-card" href="gestao-alunos-en.html">
+            <img src="../assets/C.png" alt="Student Management" />
+            <div>
+              <strong>Student Management</strong>
+              <small>First C project: a terminal application for teachers to manage students, subjects and grades.</small>
+            </div>
+          </a>
+        </div>
+      </nav>
+    </main>
+    <footer><p>© 2026 A project by Quévin Tavares</p></footer>
+  </body>
+</html>
