@@ -1,30 +1,19 @@
 # Portfolio
 
-Portfólio pessoal desenvolvido com HTML e CSS.
+Personal portfolio developed with HTML, CSS and JS.
 
-## Tecnologias usadas
+## Technologies Used
 
 - HTML
 - CSS
-- JavaScript básico
+- Javascript for animation and iterations
 - GitHub Pages
-
-## Páginas
-
-- `index.html` - versão em português
-- `en.html` - versão em inglês
-- `universidades.html` e `universities.html` - universidades em português e inglês
-- `projects/nome.html` e `projects/nome-en.html` - cada projeto em português e inglês
 
 ## Idiomas
 
-Cada idioma tem o seu próprio ficheiro HTML, com o conteúdo escrito diretamente
-na página. Os botões EN/PT abrem a página correspondente no outro idioma.
-Para alterar um texto, edita os dois ficheiros HTML.
+Each language has its own page, with the content written directly on the page. The EN/PT buttons oppen up the corresponding page of the other idiom
+To change the text, change the page in both languages.
 
-Não existe tradução por JavaScript. O `script.js` trata apenas das interações
-e animações do site.
-
-## Autor
+## Author
 
 Quévin Tavares

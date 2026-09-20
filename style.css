@@ -240,7 +240,9 @@ section {
   font-size: clamp(2.1rem, 4vw, 3.4rem);
   line-height: 1;
   letter-spacing: -0.06em;
+  text-align: center;
 }
+
 
 .stack-grid {
   display: flex;
@@ -436,6 +438,13 @@ section {
   padding: 28px;
 }
 
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
 .about-card p,
 .experience-card p,
 .contact-card p {
@@ -456,6 +465,7 @@ section {
 .experience-card h3 {
   margin: 6px 0;
   font-size: 1.35rem;
+  text-align: center;
 }
 
 .experience-card strong {
@@ -631,7 +641,7 @@ footer {
 .project-cover, .project-cover-image { height: 280px; flex-shrink: 0; padding: 14px; background: #0d0d10; }
 .project-cover img, .project-cover-image img { height: 224px; padding: 12px; object-fit: contain; object-position: center; opacity: 1; }
 .project-cover::after { content: none; }
-.project-content { display: flex; flex-direction: column; flex: 1; align-items: flex-start; }
+.project-content { display: flex; flex-direction: column; flex: 1; align-items: flex-start; text-align: center; padding: 24px; }
 .project-content p { min-height: 0; margin-bottom: 24px; }
 .project-content > a, .project-content .project-links { margin-top: auto; }
 .project-content .project-links a { margin-top: 0; }
@@ -678,3 +688,36 @@ footer {
 .for-universities .gallery-note { margin-bottom: 24px; }
 @media (max-width: 1050px) { .nav { flex-wrap: wrap; padding-block: 14px; } .nav-links { gap: 16px; flex-wrap: wrap; } }
 @media (max-width: 640px) { .nav-links { display: flex; width: 100%; justify-content: center; order: 3; font-size: .85rem; } .nav > .btn { width: auto; } }
+
+/* Keep text and controls centered inside card-style containers. */
+.profile-card,
+.info-box,
+.stack-item,
+.project-card,
+.about-card,
+.experience-card,
+.admissions-card,
+.story-card,
+.media-card,
+.event-card,
+.document-links,
+.music-pending,
+.academic-summary {
+  text-align: center;
+}
+
+.project-content {
+  align-items: center;
+}
+
+.project-cover,
+.project-links,
+.document-links {
+  justify-content: center;
+}
+
+.admissions-card ul,
+.story-card ul {
+  padding-left: 0;
+  list-style-position: inside;
+}
