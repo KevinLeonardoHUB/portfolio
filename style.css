@@ -721,3 +721,23 @@ footer {
   padding-left: 0;
   list-style-position: inside;
 }
+
+
+.admissions-video {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin: 24px auto 0;
+  border-radius: 16px;
+  background: #101014;
+}
+
+.for-universities .admissions-hero {
+  min-height: auto;
+  padding-bottom: 24px;
+}
+
+.for-universities #profile {
+  padding-top: 24px;
+}
